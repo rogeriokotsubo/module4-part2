@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Atividade de Seletores em CSS</title>
+</head>
+<body>
+  <!-- Crie uma página web que demonstre a utilização de seletores CSS em elementos HTML.
+  Deve conter seletores para “id” e “class” bem como demonstrar o uso de seletores em atributos,
+  pseudo-classes e pseudo-elementos bem como o uso de “combinators”.
+  Mostre o código no Github ou JSFiddle com o resultado obtido. -->
+  <br />
+  <h1>Seletor para elemento</h1>
+  <h1 id="h1-id">Seletor para id</h1>
+  <h1 class="h1-classe">Seletor para classe</h1>
+  <br /><br />
+
+  <h1 class="h1-normal">Seletores de atributos</h1>
+  <p data="verde">Color para atributo data = verde</p>
+  <p data="vermelho">Color para atributo data = vermelho</p>
+  <p data="roxo">Color para atributo data = roxo</p>
+  <br /><br />
+
+  <h1 class="h1-normal">Seletores de pseudo-classes</h1>
+  <span>Color para a pseudo-classe do span hover = verde</span>
+  <br />
+  <a  href="https://www.alphaedtech.org.br//" target="_blank">Alpha EdTech</a>
+  <br /><br />
+
+  <h1 class="h1-normal">Seletores de pseudo-elementos</h1>
+  <p>Primeira letra em bold 2em</p>
+  <br /><br />
+
+  <h1 class="h1-normal">Combinators - Seletor Descendente div ul : blue</h1>
+  <div id="seletor-descendente"> 
+    <ul> 
+      <li>Primeira linha</li>
+      <li>Segunda linha</li>
+      <li>Terceira linha</li>
+      <li>Quarta linha</li>
+    </ul>
+    <br />
+    <ul> 
+      <li>Primeira linha</li>
+      <li>Segunda linha</li>
+      <li>Terceira linha</li>
+      <li>Quarta linha</li>
+    </ul>
+  </div>
+  <br />
+
+  <h1 class="h1-normal">Combinators - Seletor Filho div > ul : red</h1>
+  <div id="seletor-filho"> 
+    <ul> 
+      <li>Primeira linha filho</li>
+      <li>Segunda linha filho</li>
+      <li>Terceira linha filho</li>
+      <li>Quarta linha filho</li>
+    </ul>
+    <h4>
+      <ul> 
+        <li>Primeira linha neto</li>
+        <li>Segunda linha neto</li>
+        <li>Terceira linha neto</li>
+        <li>Quarta linha neto</li>
+      </ul>
+    </h4>
+    <br />
+
+  <h1 class="h1-normal">Combinators - Seletor Irmão Adjacente ul + p : green</h1>
+  <div> 
+    <ul> 
+      <li>Primeira linha</li>
+      <li>Segunda linha</li>
+      <li>Terceira linha</li>
+      <li>Quarta linha</li>
+    </ul>
+    <p>Irmão adjacente &lt;span&gt;</p> 
+    <p>Outro irmão &lt;span&gt;</p> 
+    <br />    
+  </div>
+
+  <h1 class="h1-normal">Combinators - Seletor Irmão em Geral ul ~ span : red</h1>
+  <div> 
+    <ul> 
+      <li>Primeira linha</li>
+      <li>Segunda linha</li>
+      <li>Terceira linha</li>
+      <li>Quarta linha</li>
+    </ul>
+    <br />
+    <span>Irmão &lt;span&gt;</span> 
+    <br />
+    <p>Irmão &lt;p&gt;</p> 
+    <span>Irmão &lt;span&gt;</span> 
+    <br />
+  </div>
+
+</body>
+</html>
+</body>
+</html>

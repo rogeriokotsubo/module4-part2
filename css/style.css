@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  color: purple;
+}
+
+h1 {
+  color: red;
+}
+#h1-id {
+  color: yellow;
+}
+.h1-classe {
+  color: green;
+}
+.h1-normal {
+  color: black;
+}
+p[data="vermelho"] {
+  color: red;
+}
+p[data="verde"] {
+  color: green;
+}
+p[data="roxo"] {
+  color: purple;
+}
+span:hover {
+  color: green;
+}
+a:link {
+  color: green;
+}  
+a:visited {
+  color: red;
+}  
+p::after {
+  content: " →";
+}  
+p::first-letter {
+  font-weight: bold;
+  font-size: 2em;
+}
+#seletor-descendente ul {
+  color: blue;
+}
+#seletor-filho > ul {
+  color: red;
+}
+ul + p {
+  color: green;
+}
+ul ~ span {
+  color: red;
+}
